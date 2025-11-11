@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نابین‌کرفت - سرور ماینکرفت و تراریا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="time"></div>
+                <div class="logo"> ST ABAD</div>
+                <a href="https://t.me/StAbad" class="login-btn">ورود به چنل تلگرام</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">همین صفحه</a></li> <p>   </p>
+                    <li><a href="./ghavanin.html">قوانین</a></li>
+                    <li><a href="https://t.me/StAbad">تلگرام</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+              سرور ماینکرفت  ST ABAT
+            </h1>
+            <p>-ما با ارائه‌ی یک سرور ماینکرافت SMP اینجاییم تا تجربه‌ای بهتر و متفاوت از سرورهای ایرانی داشته باشید.</p>
+            <div class="hero-buttons">
+                <a href="./ghavanin.html" class="btn btn-primary">مشاهده قوانين سرور</a>
+                <a href="#" class="btn btn-secondary">دیدن آیپی سرور</a> <a href="https://t.me/Strom_Man17" class="btn btn-secondary">خرید ورودی سرور</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Section -->
+    <section class="trusted">
+        <div class="container">
+            <h2>ما و شما</h2>
+            <div class="youtubers-slider">
+                <div class="youtuber active">
+                    <img src="./images/start.png" alt="عکس">
+                    <span>
+                      شروع سرور با شما
+                    </span>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid"> <h3> ویژگی های سرور:</h3>
+                <div class="feature-card">
+                    <h3>-سروری با پینگ بهتر.</h3>
+                    <p>
+                      داخل این سرور با پینگ پایین و مناسب برای بازی ماینکرفت  ،بازی کن!
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <h3>-پلاگین‌های کاربردی برای راحتی بیشتر پلیرها.</h3>
+                    <p>پلاگین هایی مثل ترید و کلیم هستن که کمکت میکنن راحت تر به بازی ادامه بدی.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>-جامعه‌ای از پلیرهای خوب و پایه.</h3>
+                    <p>این سرور کلی پلیر پایه و خوب داره که میتونی باهاشون  دوست بشی و تیمتونو قوی‌تر کنید!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>سوالات متداول❓️</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>وقتی وارد سرور میشم نمیتونم حرکت کنم دلیلش چیه؟</h3>
+                    <p>
+                      سرور ما برای امنیت اکانت بازیکنان کرک ، پلاگین لاگین دارد . <br>
+                      طریقه استفاده: <br>
+                      اولین بار که وارد سرور شدید در چت بنویسید: <br> /register رمزانتخابی تکرار <br> و از آن به بعد ، در چت بنویسید:<br> /login رمز <br> الان دیگه درست شد!
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>
+                      آیا سرور قوانين ندارد؟
+                    </h3>
+                    <p>
+                      خیر، لطفا هرچه زودتر قوانین را در بخش قوانین سرور که بالا ذکر شد را مطالعه کنید ، در غیر این صورت کارکنان ما به زودی شمارا بن خواهند کرد.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="./ghavanin.html">قوانین</a>
+                <a href="https://t.me/Strom_Man17">خرید ورودی</a>
+            </div>
+            <div class="copyright">
+              حق‌نشر ۱۴۰۴ || تمامی حقوق محفوظ است!
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // اسلایدر یوتیوبرها
+        document.addEventListener('DOMContentLoaded', function() {
+            const youtubers = document.querySelectorAll('.youtuber');
+            let currentYoutuber = 0;
+            
+            function showNextYoutuber() {
+                // مخفی کردن یوتیوبر فعلی
+                youtubers[currentYoutuber].classList.remove('active');
+                
+                // محاسبه یوتیوبر بعدی
+                currentYoutuber = (currentYoutuber + 1) % youtubers.length;
+                
+                // نمایش یوتیوبر جدید
+                youtubers[currentYoutuber].classList.add('active');
+            }
+            
+            // شروع اسلایدر با تاخیر 4 ثانیه
+            setInterval(showNextYoutuber, 4000);
+        });
+      
+        // نمایش پیام زیباتر
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.querySelector('.btn.btn-secondary');
+            
+            if (button) {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // ساخت نوتیفیکیشن زیبا
+                    const notification = document.createElement('div');
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: #1e293b;
+                        color: #60a5fa;
+                        padding: 15px 25px;
+                        border-radius: 8px;
+                        border: 2px solid #3b82f6;
+                        font-weight: bold;
+                        z-index: 1000;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                    `;
+                    notification.textContent = 'ایپی سرور: alex.9craft.ir:19609';
+                    
+                    document.body.appendChild(notification);
+                    
+                    // حذف خودکار بعد از 3 ثانیه
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>�نیه
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
